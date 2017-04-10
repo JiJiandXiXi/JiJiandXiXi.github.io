@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JiJiandXiXi</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="css/animate.min.css" rel="stylesheet" media="all">
+<link rel="stylesheet" type="text/css" href="album.css">
+<!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+<link href="css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+<style>
+.index-btn1{
+	position:absolute;
+	top:90%; right:75px;
+	width:160px; height:60px;
+	text-align:left;
+	display:block;
+	text-decoration:none;
+	line-height:50px;
+	font-family:"微软雅黑" sans-serif;
+	font-weight:bolder;
+	border:2px solid rgba(255,255,255,0);
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	background:url(../images/123.png) no-repeat 130px center;
+	transition:0.4s ease;
+	-webkit-transition:0.4s ease;
+	-moz-transition:0.4s ease;;
+	-ms-transition:0.4s ease;
+	-o-transition:0.4s ease;
+	cursor:pointer;
+}
+
+.index-btn1:hover{
+	right:85px;
+	border:2px solid #FFF;
+	background-position:140px center;
+	color:#FFF;
+	
+}
+.index-btn1:hover .line{
+    background:#FFF;
+}
+.index-btn1 .line{
+	display:block;
+	position:absolute;
+	background:none;
+	transition:0.4s ease;
+	-webkit-transition:0.4s ease;
+	-moz-transition:0.4s ease;;
+	-ms-transition:0.4s ease;
+	-o-transition:0.4s ease;
+}
+
+.index-btn1 .line-top{
+	height:2px;
+	width:0px;
+	left:-110%;
+	top:-2px;
+}
+.index-btn1:hover .line-top{
+	width:100%;
+	left:-2px;
+}
+
+.index-btn1 .line-bottom{
+	height:2px;
+	width:0px;
+	right:-110%;
+	bottom:-2px;
+}
+.index-btn1:hover .line-bottom{
+	width:100%;
+	right:-2px;
+}
+
+.index-btn1 .line-left{
+	height:0px;
+	width:2px;
+	bottom:-110%;
+	left:-2px;
+}
+.index-btn1:hover .line-left{
+	height:100%;
+	bottom:-2px;
+}
+
+.index-btn1 .line-right{
+	height:0px;
+	width:2px;
+	top:-110%;
+	right:-2px;
+}
+.index-btn1:hover .line-right{
+	height:100%;
+	top:-2px;
+}
+</style>
+
+</head>
+<body>
+	<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="50000000" >
+
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+				<li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper For Slides -->
+			<div class="carousel-inner" role="listbox">
+
+				<!-- Third Slide -->
+				<div class="item active">
+
+					<!-- Slide Background -->
+					<img src="images/main1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+					<div class="bs-slider-overlay"></div>
+
+					<div class="container">
+						<div class="row">
+							<!-- Slide Text Layer -->
+							<div class="slide-text slide_style_left">
+								<h1 data-animation="animated zoomInRight">亲爱的，你知道吗</h1>
+								<p data-animation="animated fadeInLeft">没有你的日子，宝宝好难过</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Slide -->
+
+
+
+				<!-- Second Slide -->
+
+				<div class="item">
+
+					<!-- Slide Background -->
+					
+					<img src="images/main2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+					<div class="bs-slider-overlay"></div>
+					<!-- Slide Text Layer -->
+					<div class="slide-text slide_style_center">
+						<h1 data-animation="animated flipInX">我向你保证</h1>
+						<p data-animation="animated lightSpeedIn">今后一定好好听你的话，再也不那样做了</p>
+					</div>
+				</div>
+				<!-- End of Slide -->
+
+
+				<!-- Third Slide -->
+				<div class="item">
+
+					<!-- Slide Background -->
+					<img src="images/main3.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+					<div class="bs-slider-overlay"></div>
+					<!-- Slide Text Layer -->
+					<div class="slide-text slide_style_right">
+						<h1 data-animation="animated zoomInLeft">亲爱的，接下来</h1>
+						<p data-animation="animated fadeInRight">就是见证奇迹的时刻</p>
+<!--						<a href="album.html" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">我那么真诚<br>你就点我一下呗</a>-->
+                        <p class="index-btn1" data-animation="animated fadeInLeft" style="color:rgb(231,231,231)">          
+                        <span class="line line-top"></span>
+          				<span class="line line-left"></span>
+          				<span class="line line-right"></span>
+         			 	<span class="line line-bottom"></span>
+                        我那么真诚<br>你就点我一下呗</p>
+					</div>
+				</div>
+
+				
+				<!-- End of Slide -->
+
+
+			</div><!-- End of Wrapper For Slides -->
+
+			<!-- Left Control -->
+			<a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+		</div> <!-- End  bootstrap-touch-slider Slider -->
+        
+    <!--第二页面开始-->
+	<div id="index-cm">
+		<a href="encounter_girl.html" class="block" target="_blank">那些年我们错过的女孩</a>
+		<a href="encounter_res.html" class="block" target="_blank">那些年我们去过的餐厅</a>
+		<a href="encounter_qua.html" class="block" target="_blank">那些年我们吵过的架</a>
+	</div> 
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/bootstrap-touch-slider.js"></script>
+<script type="text/javascript">
+	$('#bootstrap-touch-slider').bsTouchSlider();
+</script>
+
+</body>
+</html>
