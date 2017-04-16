@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+#imgCamera{position:relative; background:url(../images/bkg_3.jpg);color:white;line-height:29px; min-width:1288px; height:800px; margin:auto;}
+#imgContainer{width:600px;height:300px;border:1px solid pink; margin:auto; position:absolute; top:80px;}
+img{border:0;
+	cursor:url(../images/Arrow.cur),pointer;}
+#imgCamera .img-photo{
+	z-index:1;
+	position:absolute;
+	background:#FFF;
+}
+#imgCamera .img-photo img{
+	margin:10px 10px;
+}
+
+#imgCamera .img-photo1{
+	top:60px; left:65px;
+	width:140px; height:260px;
+	transform:rotate(-30deg);
+}
+#imgCamera .img-photo2{
+	top:340px; left:100px;
+	width:140px; height:260px;
+	transform:rotate(30deg);
+}
+#imgCamera .img-photo3{
+	top:350px; left:350px;
+	width:140px; height:260px;
+	transform:rotate(-45deg);
+}
+#imgCamera .img-photo4{
+	top:360px; left:700px;
+	width:170px; height:240px;
+	transform:rotate(25deg);	
+}
+#imgCamera .img-photo5{
+	top:350px; left:1000px;
+	width:260px; height:220px;
+	transform:rotate(-15deg);
+}
+#imgCamera .img-photo6{
+	top:50px;  left:1000px;
+	width :260px; height:220px;
+	transform:rotate(-3deg);
+}
+@-o-keyframes  img-photoy{
+	  	  0% {
+			-ms-transform:rotate3d(0,0,0,0);
+			-o-transform:rotate3d(0,0,0,0);
+            -webkit-transform:rotate3d(0,0,0,0);
+			transform:rotate3d(0,0,0,0);
+			opacity:1;
+          }
+		  50% {
+			 -ms-transform:rotate3d(0,50,0,-75deg));
+			 -o-transform:rotate3d(0,50,0,-75deg);
+             -webkit-transform:rotate3d(0,50,0,-75deg);
+			 transform:rotate3d(0,50,0,-75deg);
+             opacity:0.5;
+          }
+		  100% {
+           	-ms-transform:rotate3d(0,0,0,0);
+			-o-transform:rotate3d(0,0,0,0);
+            -webkit-transform:rotate3d(0,0,0,0);
+			transform:rotate3d(0,0,0,0);
+			opacity:1;
+          }
+}
+
+@-webkit-keyframes img-photoy{
+	  	  0% {
+			-ms-transform:rotate3d(0,0,0,0);
+			-o-transform:rotate3d(0,0,0,0);
+            -webkit-transform:rotate3d(0,0,0,0);
+			transform:rotate3d(0,0,0,0);
+			opacity:1;
+          }
+		  50% {
+			 -ms-transform:rotate3d(0,50,0,-75deg));
+			 -o-transform:rotate3d(0,50,0,-75deg);
+             -webkit-transform:rotate3d(0,50,0,-75deg);
+			 transform:rotate3d(0,50,0,-75deg);
+             opacity:0.5;
+          }
+		  100% {
+           	-ms-transform:rotate3d(0,0,0,0);
+			-o-transform:rotate3d(0,0,0,0);
+            -webkit-transform:rotate3d(0,0,0,0);
+			transform:rotate3d(0,0,0,0);
+			opacity:1;
+          }
+}
+
+@-o-keyframes  img-photonl{
+	  	  0% {
+            border-radius:0 0 0 0; opacity:1; left:55px;
+          }
+		  50% {
+          	border-top-left-radius:100px;
+			border-top-right-radius:200px;
+			border-bottom-left-radius:300px; 
+			opacity:0.5;
+			left:60px;
+          }
+		  100% {
+			opacity:1;
+          }
+
+}
+@-webkit-keyframes img-photonl{
+	  	  0% {
+            border-radius:0 0 0 0; opacity:1; left:55px;
+          }
+		  50% {
+          	border-top-left-radius:100px;
+			border-top-right-radius:200px;
+			border-bottom-left-radius:300px; 
+			opacity:0.5;
+			left:60px;
+          }
+		  100% {
+			opacity:1;
+          }
+
+}
+@-o-keyframes  img-photonr{
+ 		 0% {
+            border-radius:0 0 0 0; opacity:1; left:185px;
+          }
+		  50% {
+		   	border-top-left-radius:200px;
+			border-top-right-radius:100px;
+			border-bottom-right-radius:300px;
+			opacity:0.5;
+			left:180px;
+          }
+		  100% {
+			opacity:1;
+          }
+
+}
+@-webkit-keyframes img-photonr{
+	  	  0% {
+            border-radius:0 0 0 0; opacity:1; left:185px;
+          }
+		  50% {
+		   	border-top-left-radius:200px;
+			border-top-right-radius:100px;
+			border-bottom-right-radius:300px;
+			opacity:0.5;
+			left:180px;
+          }
+		  100% {
+			opacity:1;
+          }
+}
+#imgCamera .img-photoz{
+	position:absolute;
+	z-index:5;
+	left:1050px;
+	background:#FFF;
+	border-width:5px 5px 10px 5px;
+	border-color:#FFF;
+	border-style:solid;
+	backface-visibility:hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	animation: img-photoy 3s linear infinite;
+	-moz-animation: img-photoy 3s linear infinite; /* Firefox */
+	-webkit-animation:img-photoy 3s linear infinite; /* Safari and Chrome */
+	-o-animation: img-photoy 3s linear infinite; /* Opera */
+}
+#imgCamera .img-photoz1{
+	 top:20px;
+
+}
+#imgCamera .img-photoz2{
+	 top:220px;
+	 animation-delay:0.2s;
+	 -moz-animation-delay:0.2s; /* Firefox */
+	 -webkit-animation-delay:0.2s; /* Safari and Chrome */
+	 -o-animation-delay:0.2s; /* Opera */
+
+}
+#imgCamera .img-photoz3{
+	 top:420px;
+	 animation-delay:0.4s;
+	 -moz-animation-delay:0.4s; /* Firefox */
+	 -webkit-animation-delay:0.4s; /* Safari and Chrome */
+	 -o-animation-delay:0.4s; /* Opera */
+
+
+}
+#imgCamera .img-photon{
+	position:absolute;
+	z-index:5;
+	top:180px;
+}
+#imgCamera .img-photon1{
+	left:60px;
+	animation: img-photonl 3s linear;
+	-moz-animation: img-photonl 3s lineare; /* Firefox */
+	-webkit-animation:img-photonl 3s linear; /* Safari and Chrome */
+	-o-animation: img-photonl 3s linear; /* Opera */
+}
+#imgCamera .img-photon img{
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#imgCamera .img-photon1 img{
+	border-top-left-radius:100px;
+	border-top-right-radius:200px;
+	border-bottom-left-radius:300px;
+	animation: img-photonl 3s linear;
+	-moz-animation: img-photonl 3s lineare; /* Firefox */
+	-webkit-animation:img-photonl 3s linear; /* Safari and Chrome */
+	-o-animation: img-photonl 3s linear; /* Opera */
+
+}
+
+#imgCamera .img-photon2{
+	left:180px;
+	animation: img-photonr 3s linear;
+	-moz-animation: img-photonr 3s lineare; /* Firefox */
+	-webkit-animation:img-photonr 3s linear; /* Safari and Chrome */
+	-o-animation: img-photonr 3s linear; /* Opera */
+
+}
+#imgCamera .img-photon2 img{
+	border-top-left-radius:200px;
+	border-top-right-radius:100px;
+	border-bottom-right-radius:300px;
+	animation: img-photonr 3s linear;
+	-moz-animation: img-photonr 3s lineare; /* Firefox */
+	-webkit-animation:img-photonr 3s linear; /* Safari and Chrome */
+	-o-animation: img-photonr 3s linear; /* Opera */
+}
+
+

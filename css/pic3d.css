@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body,div{margin:0; background:pink;}
+body{position:relative;}
+#pics_3d{
+	position:absolute;
+	height:300px;
+	width:100%; 
+	background:url(../images/bkg_1.jpg); 
+	top:200px;
+	border-bottom:20px solid #F99; 
+	border-top:20px solid #F99; 
+}
+#pics_3d img{
+	position:absolute;
+	background:#eee; 
+	left:0;top:0;
+	border:5px solid pink;
+}
+#pic_content{
+	position:absolute;
+	right:100px; top:250px;
+	background:rgba(255,255,255,0);
+}
+#pic_content img{
+	cursor:pointer;
+	width:153px;
+	height:204px;
+	border-radius:200px;
+}
+
