@@ -11,7 +11,7 @@ function changeIt(a)
 }
 function reSize()
 {
-	var a=(window.innerWidth-1456)/2;
-	a+="px"
-	document.getElementById("bookTest").style.marginLeft=a;
+	var b=(window.innerWidth-1456)/2;
+	b+="px"
+	document.getElementById("bookTest").style.marginLeft=b;
 }
